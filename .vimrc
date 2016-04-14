@@ -11,9 +11,13 @@ set nofoldenable
 set foldlevel=1
 set laststatus=2
 let g:ConqueTerm_Color=2
+" Shift-Enter to add empty line on top
 nmap <S-Enter> O<Esc>
+" Enter to add empty line on bottom 
 nmap <CR> o<Esc>
-nmap <c-i> i<CR><Esc>
+" Ctrl + I to break current line at the cursor and move to new line
+nmap <c-i> i<Enter><Esc>
+" \n to open file browser
 nmap \n :NERDTree <CR>
 "delete trailing white space
 nmap \r %s/\s\+$//g <CR>
