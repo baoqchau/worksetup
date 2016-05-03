@@ -62,8 +62,9 @@ let g:airline#extentions#hunks#enabled=0
 let g:airline#extentions#branch#enabled=0
 
 "automatic toggle relative line number
-au FocusLost * :set number
-au FocusGained * :set relativenumber
+" au FocusLost * :set number
+" au FocusGained * :set relativenumber
+set relativenumber
 
 "Function to delete trailing spaces
 func! DeleteTrailingWS()
