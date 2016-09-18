@@ -5,7 +5,8 @@ THIS_FILE_PATH = os.path.dirname(os.path.realpath(__file__))
 
 def create_all_sym_links():
   files_to_link = [
-    '.vimrc'
+    '.vimrc',
+    '.ideavimrc'
   ]
 
   for f in files_to_link:
