@@ -12,11 +12,11 @@ def create_all_sym_links():
   for f in files_to_link:
     src = os.path.join(THIS_FILE_PATH, f)
     dest = os.path.join(os.environ['HOME'], f)
-    print('\tLinking file %s to %s' % (src, dest))
 
     if os.path.exists(dest):
       print('\tSkipping %s' % (src))
     else:
+    print('\tLinking file %s to %s' % (src, dest))
       os.symlink( src, dest )
 
 def link_alias_setup_bashrc():
