@@ -26,7 +26,7 @@ nmap \cd :cd %:p:h <CR>
 filetype plugin indent on
 
 "the following will make tab 4 space wide but no convert tab to space
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " set shiftwidth = 4 with expandtab
 nmap \4 :set tabstop=4 softtabstop=4 shiftwidth=4 expandtab<CR>
