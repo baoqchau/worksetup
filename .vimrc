@@ -143,3 +143,6 @@ set colorcolumn=81
 
 " set NERDCommenter to leave a space after # or //
 let g:NERDSpaceDelims = 1
+
+" for MacOS to share clipboard
+set clipboard=unnamed
