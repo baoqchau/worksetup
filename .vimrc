@@ -2,7 +2,7 @@ let &runtimepath.='p:\\_vim'
 execute pathogen#infect()
 set nu
 set hlsearch
-colorscheme torte
+colorscheme desert
 syntax on
 set smartcase
 set foldmethod=indent
