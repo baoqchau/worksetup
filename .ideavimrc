@@ -4,4 +4,5 @@ nmap <CR> o<Esc>
 nmap <S-Enter> i<Enter><Esc>
 
 " relative line number
+set nu
 set relativenumber
