@@ -25,9 +25,6 @@ nmap \r %s/\s\+$//g <CR>
 nmap \cd :cd %:p:h <CR>
 filetype plugin indent on
 
-"the following will make tab 4 space wide but no convert tab to space
-set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-
 " set shiftwidth = 4 with expandtab
 nmap \4 :set tabstop=4 softtabstop=4 shiftwidth=4 expandtab<CR>
 
@@ -108,7 +105,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#101010 ctermbg=4
 if has("win32") || has("win16")
 	set guifont=Source_Code_Pro:h11:cANSI
 else
-	set guifont=Source\ Code\ Pro\ Medium\ 11
+	set guifont=Source\ Code\ Pro\ Medium\ 16
 endif
 
 "add the vertical line to show the tab indentation
@@ -146,3 +143,12 @@ let g:NERDSpaceDelims = 1
 
 " for MacOS to share clipboard
 set clipboard=unnamed
+
+" moving through camel case word
+call camelcasemotion#CreateMotionMappings('<leader>')
+
+"the following will make tab 2 space wide but no convert tab to space
+set tabstop=2 
+set softtabstop=2 
+set shiftwidth=2 
+set expandtab
