@@ -153,4 +153,10 @@ set softtabstop=2
 set shiftwidth=2 
 set expandtab
 
-:set guiheadroom=0
+" option for gvim 
+" no menubar
+set guioptions-=m
+" no toolbar
+set guioptions-=T
+" no scrollbar
+set guioptions-=r
