@@ -1,4 +1,3 @@
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias glg='git log --graph --decorate'
 alias g='git'
 alias jsh='find app/assets/javascripts -name "*.js" -exec jshint {} \;'
