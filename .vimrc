@@ -13,7 +13,7 @@ set laststatus=2
 let g:ConqueTerm_Color=2
 " Shift-Enter to add empty line on top
 nmap <S-Enter> O<Esc>
-" Enter to add empty line on bottom 
+" Enter to add empty line on bottom
 nmap <CR> o<Esc>
 " Ctrl + I to break current line at the cursor and move to new line
 nmap <c-i> i<Enter><Esc>
@@ -89,7 +89,7 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_indent_levels = 30
-let g:indent_guides_auto_colors = 0 
+let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#202020   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#101010 ctermbg=4
 
@@ -110,7 +110,7 @@ endif
 
 "add the vertical line to show the tab indentation
 "\w to turn it on and \q to turn it off
-:set list lcs=tab:\|\ 
+:set list lcs=tab:\|\
 nmap \w :set list <CR>
 nmap \q :set nolist <CR>
 
@@ -148,9 +148,9 @@ set clipboard=unnamed
 call camelcasemotion#CreateMotionMappings('<leader>')
 
 "the following will make tab 2 space wide but no convert tab to space
-set tabstop=2 
-set softtabstop=2 
-set shiftwidth=2 
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " option for gvim 
@@ -160,3 +160,8 @@ set guioptions-=m
 set guioptions-=T
 " no scrollbar
 set guioptions-=r
+
+func! HashRocketSyntaxConversion()
+  %s/:\([^=,'" ]*\)\s*=>/\1:/ge
+endfunc
+noremap <leader>h :call HashRocketSyntaxConversion()<CR>
