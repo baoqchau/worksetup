@@ -1,0 +1,42 @@
+[rerere]
+	enabled = true
+[init]
+	templatedir = /Users/appfolio/.git_templates
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/appfolio/.gitignore_global
+	editor = vim
+[user]
+	name = Quan Chau
+	email = quanqchau@gmail.com
+[alias]
+	st = status
+	lg = log --graph --decorate
+	co = checkout
+	br = branch
+	ci = commit
+	ph = push origin HEAD
+	cia = commit --amend
+	cian = commit --amend --no-edit
+	ap = add -p
+	lgo = log --graph --decorate --oneline
+	cp = cherry-pick
+	rbi = rebase -i
+	rbc = rebase --continue
+	lgv = log --decorate --reverse
+	H = HEAD
+	rh = reset HEAD~1
+	cpc = cherry-pick --continue
+	cif = commit --fixup
+	rbia = rebase -i --autosquash
+	ss = show --stat
+	sha = rev-parse
+	shah = rev-parse HEAD
+	dc = diff --cached
+	ds = diff --stat
+	d = diff
+	stu = status -uno
+	pod = push origin --delete
+[rebase]
+	autosquash = false
