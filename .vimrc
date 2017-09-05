@@ -165,3 +165,5 @@ func! HashRocketSyntaxConversion()
   %s/:\([^=,'" ]*\)\s*=>/\1:/ge
 endfunc
 noremap <leader>h :call HashRocketSyntaxConversion()<CR>
+
+let g:ctrlp_custom_ignore = 'node_modules'
