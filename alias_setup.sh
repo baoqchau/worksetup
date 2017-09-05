@@ -2,7 +2,6 @@ alias glg='git log --graph --decorate'
 alias g='git'
 alias jsh='find app/assets/javascripts -name "*.js" -exec jshint {} \;'
 alias rt='rake test'
-alias rtc='TESTOPTS="--fail-fast" rake test && rubocop'
 alias dbreload='bundle exec rake db:drop; bundle exec db:create; bundle exec rake db:migrate; bundle exec rake db:fixtures:load'
 alias bi='bundle install'
 alias guard='rvm 2.3.0 do guard'
@@ -37,3 +36,10 @@ alias tl='test_launcher'
 alias nt='NODE_ENV=test'
 alias lmo='./node_modules/.bin/mocha'
 alias lseq='./node_modules/.bin/sequelize'
+alias npt='npm test'
+alias npti='npm test -- --inspect --debug-brk'
+alias ngrep="grep -nr --color --exclude-dir='node_modules' --exclude-dir='.git' --exclude='bundle.js'"
+alias eb="$HOME/Library/Python/3.6/bin/eb"
+alias rr="RAILS_ENV=test bundle exec rspec && bundle exec rubocop"
+alias rubo="bundle exec rubocop"
+alias rs="RAILS_ENV=test bundle exec rspec --format documentation"
