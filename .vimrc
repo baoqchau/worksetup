@@ -105,7 +105,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#101010 ctermbg=4
 if has("win32") || has("win16")
   set guifont=Source_Code_Pro:h11:cANSI
 else
-  set guifont=Source\ Code\ Pro:h16
+  set guifont=Source\ Code\ Pro\ 15
 endif
 
 "add the vertical line to show the tab indentation
