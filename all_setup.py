@@ -16,7 +16,7 @@ def create_all_sym_links():
     if os.path.exists(dest):
       print('\tSkipping %s' % (src))
     else:
-    print('\tLinking file %s to %s' % (src, dest))
+      print('\tLinking file %s to %s' % (src, dest))
       os.symlink( src, dest )
 
 def link_alias_setup_bashrc():
